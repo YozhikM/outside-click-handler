@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import jest, { describe, it, expect } from 'jest';
 import OutsideClickHandler from '../OutsideClickHandler';
 
 const ChildrenComponent = () => <span>I'm children!</span>;

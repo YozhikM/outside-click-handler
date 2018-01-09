@@ -2,8 +2,6 @@
 
 exports[`OutsideClickHandler render() 1`] = `
 <div>
-  <SvgIcon
-    file="add"
-  />
+  <ChildrenComponent />
 </div>
 `;
