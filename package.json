@@ -1,10 +1,11 @@
 {
   "name": "outside-click-handler",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Outside click handler for React",
-  "main": "index.js",
+  "main": "build/OutsideClickHandler.js",
   "scripts": {
-    "build": "babel -d build/ src/OutsideClickHandler.js"
+    "build": "babel -d build/ src/",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
