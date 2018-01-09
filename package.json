@@ -1,6 +1,6 @@
 {
   "name": "outside-click-handler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Outside click handler for React",
   "main": "build/OutsideClickHandler.js",
   "scripts": {
