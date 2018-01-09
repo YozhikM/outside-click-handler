@@ -4,7 +4,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import OutsideClickHandler from '../OutsideClickHandler';
 
-const ChildrenComponent = () => <span>I'm children!</span>;
+const ChildrenComponent = () => <span>Children</span>;
 
 describe('OutsideClickHandler', () => {
   it('render()', () => {
