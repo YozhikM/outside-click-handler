@@ -1,6 +1,8 @@
 
 # OutsideClickHandler
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/YozhikM/outside-click-handler.svg)](https://greenkeeper.io/)
+
 ## API
 
 The component accepts two types of props: children and callback function.
