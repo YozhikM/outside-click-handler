@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import OutsideClickHandler from '../OutsideClickHandler';
+import OutsideClickHandler from '../index.js';
 
 const ChildrenComponent = () => <span>Children</span>;
 

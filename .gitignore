@@ -4,7 +4,8 @@
 #modules
 /node_modules
 
-/build
+/index.js
+/flow-typed
 
 #misc
 ncp-debug.log

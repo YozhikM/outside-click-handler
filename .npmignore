@@ -4,7 +4,10 @@
 #modules
 /node_modules
 
-/build/__tests__
+/src
+/flow-typed
+jest.config.js
+jest.setup.js
 
 #misc
 ncp-debug.log
