@@ -3,9 +3,14 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/YozhikM/outside-click-handler.svg)](https://greenkeeper.io/)
 
-Simple api, lightweight (2.8kb gzip).
-
 This component is designed to handle all clicks outside, for example, to open and close modal windows.
+
+## Features
+
+- Easy to use
+- Tests covered
+- Flowtype definitions
+- Lightweight (2.8kb gzip)
 
 ## API
 
@@ -41,12 +46,6 @@ class Wrapper extends React.Component {
 
 If you want to use a component in lists, use conditions or methods to avoid poor performance.
 
-## Features
-
-- Tests covered
-- Flowtype definitions
-- Simple API
-- Lightweight
 
 ## Support
 
