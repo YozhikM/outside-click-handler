@@ -3,6 +3,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/YozhikM/outside-click-handler.svg)](https://greenkeeper.io/)
 
+Simple api, lightweight (2.8kb gzip)
 This component is designed to track all clicks outside, for example, to open and close modal windows.
 
 ## API
