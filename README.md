@@ -5,23 +5,23 @@
 
 Simple api, lightweight (2.8kb gzip).
 
-This component is designed to track all clicks outside, for example, to open and close modal windows.
+This component is designed to handle all clicks outside, for example, to open and close modal windows.
 
 ## API
 
 The component accepts two types of props: children and callback function.
 At `componentDidMount()` adds the listener, who is waiting for the click event, and `componentWillUnmount()` is removed.
 
-```
+````js
 type Props = {
   children: React.Node,
   onOutsideClick: Function,
 };
-```
+````
 
 ## How to use
 
-```
+````js
 class Wrapper extends React.Component {
   onClick = () => this.setState({ isShownHidden: !this.state.isShownHidden });
 
@@ -35,7 +35,7 @@ class Wrapper extends React.Component {
     );
   }
 }
-```
+````
 
 ## Performance
 
