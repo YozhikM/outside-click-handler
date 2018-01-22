@@ -29,8 +29,8 @@ class Wrapper extends React.Component {
     const { isShownHidden } = this.state;
     return (
       <OutsideClickHandler onOutsideClick={this.onClick}>
-        <span>I'm your child!</span>
-        {isShownHidden && <span>I'm your hidden child!</span>}
+        <span>Im your child!</span>
+        {isShownHidden && <span>Im your hidden child!</span>}
       </OutsideClickHandler>
     );
   }
@@ -40,6 +40,13 @@ class Wrapper extends React.Component {
 ## Performance
 
 If you want to use a component in lists, use conditions or methods to avoid poor performance.
+
+## Features
+
+- Tests covered
+- Flowtype definitions
+- Simple API
+- Lightweight
 
 ## Support
 
