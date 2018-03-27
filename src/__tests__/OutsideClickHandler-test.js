@@ -26,10 +26,13 @@ describe('OutsideClickHandler', () => {
       </OutsideClickHandler>
     );
     // $FlowFixMe
-    document.addEventListener = jest.fn();
+    document.body.addEventListener = jest.fn();
     wrapper.instance().componentDidMount();
 
-    expect(document.addEventListener).toBeCalledWith('click', wrapper.instance().onOutsideClick);
+    expect(document.body && document.body.addEventListener).toBeCalledWith(
+      'click',
+      wrapper.instance().onOutsideClick
+    );
   });
 
   it('componentWillUnmount()', () => {
@@ -39,11 +42,15 @@ describe('OutsideClickHandler', () => {
         <ChildrenComponent />
       </OutsideClickHandler>
     );
+
     // $FlowFixMe
-    document.removeEventListener = jest.fn();
+    document.body.removeEventListener = jest.fn();
     wrapper.instance().componentWillUnmount();
 
-    expect(document.removeEventListener).toBeCalledWith('click', wrapper.instance().onOutsideClick);
+    expect(document.body && document.body.removeEventListener).toBeCalledWith(
+      'click',
+      wrapper.instance().onOutsideClick
+    );
   });
 
   it('onOutsideClick()', () => {

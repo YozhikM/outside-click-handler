@@ -20,17 +20,21 @@ export default class OutsideClickHandler extends React.Component<Props, void> {
   }
 
   componentDidMount() {
-    document.addEventListener('click', this.onOutsideClick);
+    if (!document.body) return;
+
+    document.body.addEventListener('click', this.onOutsideClick);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('click', this.onOutsideClick);
+    if (!document.body) return;
+
+    document.body.removeEventListener('click', this.onOutsideClick);
   }
 
   onOutsideClick(e: Event) {
     const { onOutsideClick } = this.props;
     const { childNode } = this;
-    const isDescendantOfRoot = childNode && childNode.contains(e.target);
+    const isDescendantOfRoot = childNode && childNode.contains((e.target: any));
     if (!isDescendantOfRoot) {
       onOutsideClick();
     }
