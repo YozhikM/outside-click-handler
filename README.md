@@ -2,6 +2,8 @@
 # OutsideClickHandler
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/YozhikM/outside-click-handler.svg)](https://greenkeeper.io/)
+[![npm](https://img.shields.io/npm/dt/outside-click-handler.svg)](http://www.npmtrends.com/outside-click-handler)
+![FlowType compatible](https://img.shields.io/badge/flowtype-compatible-brightgreen.svg)
 
 This component is designed to handle all clicks outside, for example, to open and close modal windows.
 
