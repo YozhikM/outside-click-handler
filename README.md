@@ -8,6 +8,11 @@
 
 This component is designed to handle all clicks outside, for example, to open and close modal windows.
 
+## Requirements
+
+* [react](https://github.com/facebook/react)
+* [react-dom](https://github.com/facebook/react)
+
 ## Features
 
 - Easy to use
