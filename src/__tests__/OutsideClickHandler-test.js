@@ -26,10 +26,10 @@ describe('OutsideClickHandler', () => {
       </OutsideClickHandler>
     );
     // $FlowFixMe
-    document.body.addEventListener = jest.fn();
+    document.addEventListener = jest.fn();
     wrapper.instance().componentDidMount();
 
-    expect(document.body && document.body.addEventListener).toBeCalledWith(
+    expect(document && document.addEventListener).toBeCalledWith(
       'click',
       wrapper.instance().onOutsideClick
     );
@@ -44,10 +44,10 @@ describe('OutsideClickHandler', () => {
     );
 
     // $FlowFixMe
-    document.body.removeEventListener = jest.fn();
+    document.removeEventListener = jest.fn();
     wrapper.instance().componentWillUnmount();
 
-    expect(document.body && document.body.removeEventListener).toBeCalledWith(
+    expect(document && document.removeEventListener).toBeCalledWith(
       'click',
       wrapper.instance().onOutsideClick
     );

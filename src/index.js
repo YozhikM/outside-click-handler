@@ -20,15 +20,15 @@ export default class OutsideClickHandler extends React.Component<Props, void> {
   }
 
   componentDidMount() {
-    if (!document.body) return;
+    if (!document) return;
 
-    document.body.addEventListener('click', this.onOutsideClick);
+    document.addEventListener('click', this.onOutsideClick);
   }
 
   componentWillUnmount() {
-    if (!document.body) return;
+    if (!document) return;
 
-    document.body.removeEventListener('click', this.onOutsideClick);
+    document.removeEventListener('click', this.onOutsideClick);
   }
 
   onOutsideClick(e: Event) {
