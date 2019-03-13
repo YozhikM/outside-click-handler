@@ -23,7 +23,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-adapter-react-16": "^1.11.0",
     "enzyme-to-json": "^3.3.4",
     "flow-bin": "^0.73.0",
     "jest": "^23.1.0",
